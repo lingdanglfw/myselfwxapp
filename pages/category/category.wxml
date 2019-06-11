@@ -1,0 +1,13 @@
+<!--pages/category/category.wxml-->
+<view class='list' bindtap="bindViewTap">
+  <block wx:for='{{listData}}' wx:key='list' wx:for-item="item">
+  <view class="list_item">
+      <navigator url='../product/product'>
+      <view class='info'>
+        <view class='name'>{{item.catId}}:{{item.name}}</view>
+      </view>
+       </navigator>
+      <view class='clear'></view>
+  </view>
+  </block>
+</view>

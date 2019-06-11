@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/category/category",
+    "pages/product/product",
+    "pages/about/about"    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "eBuy",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#666",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#56abe4",
+    "backgroundColor": "#ddd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/category/category",
+        "iconPath": "images/tabbar/city1.png",
+        "selectedIconPath": "images/tabbar/city2.png",
+        "text": "目录"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "iconPath": "images/tabbar/fl.png",
+        "selectedIconPath": "images/tabbar/fx.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "images/tabbar/about1.png",
+        "selectedIconPath": "images/tabbar/about2.png",
+        "text": "关于"
+      }
+    ],
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

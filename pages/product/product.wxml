@@ -1,0 +1,18 @@
+<!--pages/product/product.wxml-->
+<view class='list'>
+  <block wx:for='{{listData}}' wx:key='list' wx:for-item="item">
+  <view class="list_item">
+      <navigator url='details?id={{item.productId}}'>
+      <view class='img'>
+        <image src="{{item.imagePath}}"  />
+      </view>
+      <view class='info'>
+        <view class='name'>{{item.productId}}:{{item.productName}}</view>
+        <view class='price'>￥{{item.price}}</view>
+        <view class='vendor'>{{item.vendorName}}</view>
+      </view>
+       </navigator>
+      <view class='clear'></view>
+  </view>
+  </block>
+</view>
